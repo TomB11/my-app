@@ -1,0 +1,12 @@
+.story-title {
+    display: flex;
+    flex-direction: row;
+
+    div {
+        flex: 1;
+    }
+}
+
+.story-description {
+    display: none;
+}

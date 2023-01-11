@@ -1,0 +1,16 @@
+<div class="navigation">
+    <div class="navigation-div">
+        <div class="logo center">
+            <img src={{imagePath}} />
+        </div>
+        <div class="links nav center">
+            <li class="nav-item" *ngFor="let link of arrayOfList">
+                <a routerLink={{link.link}} class="nav-link" appHighlight>{{link.name | uppercase}}</a>
+            </li>
+        </div>
+        <div class="social center">
+            <a href="">FACEBOOK</a>
+            <a href="">E-MAIL</a>
+        </div>
+    </div>
+</div>

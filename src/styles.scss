@@ -1,0 +1,60 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    background-color: black !important;
+}
+
+.container {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+}
+
+.right {
+    display: flex;
+    align-items: right;
+    justify-content: right;
+}
+
+.text {
+    font-size: 14px;
+}
+
+
+.photo-text {
+    background-color: transparent;
+    height: 520px;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+
+    div {
+        flex: 1;
+        flex-direction: column;
+        color: white;
+    }
+}
+
+.content-text {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    .column {
+        height: 400px;
+        flex: 1;
+    }
+}
