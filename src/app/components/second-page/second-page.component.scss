@@ -1,38 +1,8 @@
 .story-block {
+  flex-direction: column;
+
+  .title {
+    display: flex;
     flex-direction: column;
-
-    .title {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .story {
-        display: flex;
-        flex: 1;
-        flex-direction: row;
-
-        .row-year {
-            flex: 1;
-
-            .round {
-                background-color: cornflowerblue;
-                width: 220px;
-                height: 220px;
-                border-radius: 50%;
-                margin: auto;
-            }
-
-            .line {
-                width: 10px;
-                height: 30px;
-                margin: auto;
-                background-color: cornflowerblue;
-            }
-        }
-
-        .row-detail {
-            flex: 4;
-            margin: auto;
-        }
-    }
+  }
 }

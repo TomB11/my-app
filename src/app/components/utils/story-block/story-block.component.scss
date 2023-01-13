@@ -1,12 +1,30 @@
-.story-title {
-    display: flex;
-    flex-direction: row;
+.story {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  padding: 0 100px;
 
-    div {
-        flex: 1;
+  .row-year {
+    flex: 1;
+
+    .round {
+      background-color: cornflowerblue;
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      margin: auto;
     }
-}
 
-.story-description {
-    display: none;
+    .line {
+      width: 10px;
+      height: 30px;
+      margin: auto;
+      background-color: cornflowerblue;
+    }
+  }
+
+  .row-detail {
+    flex: 4;
+    margin: auto;
+  }
 }
