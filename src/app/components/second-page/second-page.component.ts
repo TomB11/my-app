@@ -7,11 +7,11 @@ import { myStory } from 'src/assets/data/my-story';
   styleUrls: ['./second-page.component.scss'],
 })
 export class SecondPageComponent implements OnInit {
-  public data = myStory;
+  data = myStory.sk;
 
   constructor() {}
 
   ngOnInit(): void {
-    console.log('data', this.data.sk.years);
+    console.log('data', this.data.years);
   }
 }

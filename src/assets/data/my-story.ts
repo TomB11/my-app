@@ -6,71 +6,76 @@ export const myStory: any = {
     years: [
       {
         year: '2017',
-        company: 'Domov',
-        logo: 'Domov',
-        projects: {
-          0: {
-            title: 'ASASSASASSASASAS',
-            description: 'sasdsdadsdadadsa',
-            role: 'Developer',
+        company: 'Company1',
+        logo: 'Company1',
+        projects: [
+          {
+            title: '111111',
+            description: 'aaaaaa',
+            role: 'Developer1',
           },
-          1: {
-            title: 'ASASSASASSASASAS',
-            description: 'sasdsdadsdadadsa',
-            role: 'Developer',
+          {
+            title: '2222222',
+            description: 'bbbbbb',
+            role: 'Developer2',
           },
-          2: {
-            title: 'ASASSASASSASASAS',
-            description: 'sasdsdadsdadadsa',
-            role: 'Developer',
+          {
+            title: '33333',
+            description: 'ccccccc',
+            role: 'Developer3',
           },
-        },
+        ],
       },
       {
         year: '2016',
-        company: 'Domov',
-        logo: 'Domov',
-        projects: {
-          0: {
+        company: 'Company2',
+        logo: 'Company2',
+        projects: [
+          {
             title: 'ASASSASASSASASAS',
             description: 'sasdsdadsdadadsa',
             role: 'Developer',
           },
-        },
+        ],
       },
       {
         year: '2015',
-        company: 'Domov',
-        logo: 'Domov',
-        projects: {
-          0: {
+        company: 'Company3',
+        logo: 'Company3',
+        projects: [
+          {
             title: 'ASASSASASSASASAS',
             description: 'sasdsdadsdadadsa',
             role: 'Developer',
           },
-          1: {
+          {
             title: 'ASASSASASSASASAS',
             description: 'sasdsdadsdadadsa',
             role: 'Developer',
           },
-        },
+        ],
       },
       {
         year: '2014',
-        company: 'Domov',
-        logo: 'Domov',
-        projects: {
-          0: {
+        company: 'Company4',
+        logo: 'Company4',
+        projects: [
+          {
             title: 'ASASSASASSASASAS',
             description: 'sasdsdadsdadadsa',
             role: 'Developer',
           },
-          1: {
+          {
             title: 'ASASSASASSASASAS',
             description: 'sasdsdadsdadadsa',
             role: 'Developer',
           },
-        },
+          {
+            title: 'ASASSASASSASASAS',
+            description: 'sasdsdadsdadadsa',
+            role: 'Developer',
+          },
+        ],
       },
     ],
   },

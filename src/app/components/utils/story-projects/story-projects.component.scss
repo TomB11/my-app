@@ -1,0 +1,10 @@
+.project-detail {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+
+  div {
+    flex-direction: column;
+    padding: 10px;
+  }
+}

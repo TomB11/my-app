@@ -17,7 +17,7 @@
 
     .line {
       width: 10px;
-      height: 30px;
+      height: 45%;
       margin: auto;
       background-color: cornflowerblue;
     }
@@ -26,5 +26,20 @@
   .row-detail {
     flex: 4;
     margin: auto;
+    min-height: 240px;
+
+    .company {
+      display: flex;
+      flex-direction: row;
+
+      img {
+        width: 120px;
+        height: 120px;
+      }
+
+      h1 {
+        flex: 1;
+      }
+    }
   }
 }

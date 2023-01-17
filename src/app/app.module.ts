@@ -12,6 +12,7 @@ import { BetterHighlightDirective } from './directive/better-highlight.directive
 import { DrodownDirective } from './directive/drodown.directive';
 import { HighlightDirective } from './directive/highlight.directive';
 import { StoryBlockComponent } from './components/utils/story-block/story-block.component';
+import { StoryProjectsComponent } from './components/utils/story-projects/story-projects.component';
 
 const appRoutes: Routes = [
   {path: 'home', component: FirstPgeComponent},
@@ -30,7 +31,8 @@ const appRoutes: Routes = [
     BetterHighlightDirective,
     DrodownDirective,
     HighlightDirective,
-    StoryBlockComponent
+    StoryBlockComponent,
+    StoryProjectsComponent
   ],
   imports: [
     BrowserModule,

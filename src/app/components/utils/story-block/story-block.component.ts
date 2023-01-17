@@ -1,5 +1,4 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { StoryDetail } from 'src/app/model/story-detail.story-detail.model.ts';
 
 @Component({
   selector: 'app-story-block',
@@ -8,9 +7,12 @@ import { StoryDetail } from 'src/app/model/story-detail.story-detail.model.ts';
 })
 export class StoryBlockComponent implements OnInit {
   @Input()
-  year!: any[];
+  story!: any;
+  @Input() projects!: any[];
 
   constructor() {}
 
   ngOnInit(): void {}
+
+  openDetail() {}
 }

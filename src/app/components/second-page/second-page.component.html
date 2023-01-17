@@ -1,13 +1,14 @@
 <div class="container">
   <div class="content-text p-3 story-block">
     <div class="title pt-5 center">
-      <h1>{{ data.sk.title }}</h1>
+      <h1>{{ data.title }}</h1>
       <br />
-      <span class="text p-5">{{ data.sk.description }}</span>
+      <span class="text p-5">{{ data.description }}</span>
     </div>
     <app-story-block
-      *ngFor="let storyYearEl of data.sk.years"
-      [year]="storyYearEl.year"
+      *ngFor="let storyYearEl of data.years"
+      [story]="storyYearEl"
+      [projects]="storyYearEl.projects"
     ></app-story-block>
   </div>
 </div>
