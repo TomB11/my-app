@@ -10,6 +10,9 @@
       <img src="{{ story.logo }}" alt="asd" />
       <h1>{{ story.company }}</h1>
     </div>
-    <app-story-projects [dataPrjts]="projects"></app-story-projects>
+    <app-story-projects
+      *ngIf="false"
+      [dataPrjts]="projects"
+    ></app-story-projects>
   </div>
 </div>

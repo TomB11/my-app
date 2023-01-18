@@ -6,8 +6,8 @@ export const myStory: any = {
     years: [
       {
         year: '2017',
-        company: 'Company1',
-        logo: 'Company1',
+        company: 'Company name 1',
+        logo: 'https://www.designevo.com/res/templates/thumb_small/strict-staff-and-work.webp',
         projects: [
           {
             title: '111111',
@@ -28,8 +28,8 @@ export const myStory: any = {
       },
       {
         year: '2016',
-        company: 'Company2',
-        logo: 'Company2',
+        company: 'Company name 2',
+        logo: 'https://www.designevo.com/res/templates/thumb_small/blue-circle-and-tie.webp',
         projects: [
           {
             title: 'ASASSASASSASASAS',
@@ -40,8 +40,8 @@ export const myStory: any = {
       },
       {
         year: '2015',
-        company: 'Company3',
-        logo: 'Company3',
+        company: 'Company name 3',
+        logo: 'https://www.designevo.com/res/templates/thumb_small/blue-business-suit-and-work.webp',
         projects: [
           {
             title: 'ASASSASASSASASAS',
@@ -57,8 +57,8 @@ export const myStory: any = {
       },
       {
         year: '2014',
-        company: 'Company4',
-        logo: 'Company4',
+        company: 'Company name 4',
+        logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjSpZpVOuGaHc3U35SPDCkkqLAStvUTI_tmSAIK9C2kDrKND2f5IvhqK0yZdbSVxH5i_I&usqp=CAU',
         projects: [
           {
             title: 'ASASSASASSASASAS',
