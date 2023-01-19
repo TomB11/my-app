@@ -6,6 +6,7 @@
 
   .row-year {
     flex: 1;
+    padding: 0;
 
     .round {
       background-color: cornflowerblue;
@@ -17,7 +18,7 @@
 
     .line {
       width: 10px;
-      height: 65%;
+      height: 100%;
       margin: auto;
       background-color: cornflowerblue;
     }
@@ -27,16 +28,49 @@
     flex: 4;
     margin: auto;
     min-height: 240px;
+    padding: 0;
 
+    .company-active {
+      height: 105px;
+      display: flex;
+      cursor: pointer;
+      transition: 0.3s;
+      flex-direction: row;
+      align-items: center;
+      border: 10px solid cornflowerblue;
+      border-top: 0;
+      border-left: 0;
+      border-right: 0;
+      margin: 10px 0;
+
+      img {
+        width: 95px;
+      }
+
+      h1 {
+        flex: 1;
+        padding: 0 30px;
+      }
+    }
     .company {
       display: flex;
       flex-direction: row;
-      min-height: inherit;
+      height: 240px;
       align-items: center;
+      cursor: pointer;
+      transition: 0.3s;
+
+      &:hover {
+        height: 105px;
+        border: 10px solid cornflowerblue;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        margin: 10px 0;
+      }
 
       img {
-        width: 120px;
-        height: 120px;
+        width: 95px;
       }
 
       h1 {

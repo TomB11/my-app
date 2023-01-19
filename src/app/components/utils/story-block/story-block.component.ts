@@ -10,9 +10,13 @@ export class StoryBlockComponent implements OnInit {
   story!: any;
   @Input() projects!: any[];
 
+  isDetailOpen: boolean = false;
+
   constructor() {}
 
-  ngOnInit(): void {}
-
-  openDetail() {}
+  ngOnInit(): void {
+    Object.values(this.story).map((id: any) => {
+      console.log('IDSA', id);
+    });
+  }
 }

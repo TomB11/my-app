@@ -5,13 +5,16 @@
     </div>
     <div class="line"></div>
   </div>
-  <div class="row-detail" (click)="openDetail()">
-    <div class="company">
-      <img src="{{ story.logo }}" alt="asd" />
+  <div class="row-detail">
+    <div
+      [ngClass]="this.isDetailOpen ? 'company-active' : 'company'"
+      (click)="this.isDetailOpen = !this.isDetailOpen"
+    >
       <h1>{{ story.company }}</h1>
+      <img src="{{ story.logo }}" alt="asd" />
     </div>
     <app-story-projects
-      *ngIf="false"
+      *ngIf="this.isDetailOpen"
       [dataPrjts]="projects"
     ></app-story-projects>
   </div>
