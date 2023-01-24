@@ -22,6 +22,28 @@ export const translate: any = {
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lacus ex, ullamcorper vel enim in, tincidunt mattis dolor. Nulla aliquet augue nunc, at volutpat diam pulvinar id. Praesent laoreet condimentum felis sit amet pulvinar. Vivamus viverra mauris erat, nec convallis velit iaculis sit amet. Praesent semper ante ut facilisis lacinia. Proin erat dui, volutpat sit amet arcu quis, condimentum euismod magna. Vestibulum sed arcu tincidunt, laoreet metus ac, venenatis arcu.',
     },
+    thirdPageContent: {
+      menuBarTitle: 'Categories',
+      categories: [
+        {
+          title: 'IT',
+          id: '1',
+        },
+        {
+          title: 'Personal',
+          id: '2',
+        },
+        {
+          title: 'Hobbys',
+          id: '3',
+        },
+        {
+          title: 'Certifications',
+          id: '4',
+        },
+      ],
+      detailTitle: 'Type of skill',
+    },
   },
   en: {},
 };

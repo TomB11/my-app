@@ -1,14 +1,25 @@
 <div class="container skills-page">
   <div class="menu-bar">
-    <h1>Skills</h1>
+    <h1>{{ this.data.thirdPageContent.menuBarTitle | uppercase }}</h1>
     <div class="skill-selection">
-      <button type="button" class="btn btn-light">IT</button>
-      <button type="button" class="btn btn-light">personal</button>
-      <button type="button" class="btn btn-light">hobbys</button>
-      <button type="button" class="btn btn-light">certifications</button>
+      <button
+        *ngFor="
+          let category of this.data.thirdPageContent.categories;
+          let i = index
+        "
+        type="button"
+        [ngClass]="
+          this.activeIndex[i].active ? 'btn btn-light active' : 'btn btn-light'
+        "
+        id="{{ category.id }}"
+        (click)="categoryClicked(category.title, category.id)"
+      >
+        {{ category.title | uppercase }}
+      </button>
     </div>
   </div>
-  <div class="detail-skills">
-    <h1>Type of skill</h1>
+  <div class="detail-skills center">
+    <h1>{{ this.detailTitle | uppercase }}</h1>
+    <app-skill-detail></app-skill-detail>
   </div>
 </div>

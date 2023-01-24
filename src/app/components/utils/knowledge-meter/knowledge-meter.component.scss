@@ -1,0 +1,24 @@
+.knowledge-meter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  .title {
+    flex: 1;
+    height: 100%;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .round {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 7px solid #6495ed;
+
+    h2 {
+      padding-top: 25px;
+      padding-left: 8px;
+    }
+  }
+}

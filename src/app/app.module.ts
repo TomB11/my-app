@@ -13,14 +13,16 @@ import { DrodownDirective } from './directive/drodown.directive';
 import { HighlightDirective } from './directive/highlight.directive';
 import { StoryBlockComponent } from './components/utils/story-block/story-block.component';
 import { StoryProjectsComponent } from './components/utils/story-projects/story-projects.component';
+import { SkillDetailComponent } from './components/utils/skill-detail/skill-detail.component';
+import { KnowledgeMeterComponent } from './components/utils/knowledge-meter/knowledge-meter.component';
 
 const appRoutes: Routes = [
-  {path: 'home', component: FirstPgeComponent},
-  {path: 'aboutme', component: SecondPageComponent},
-  {path: 'cv', component: ThirdPageComponent},
-  {path: '', redirectTo: 'home', pathMatch: 'full'}
-]
- 
+  { path: 'home', component: FirstPgeComponent },
+  { path: 'aboutme', component: SecondPageComponent },
+  { path: 'cv', component: ThirdPageComponent },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+];
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,14 +34,12 @@ const appRoutes: Routes = [
     DrodownDirective,
     HighlightDirective,
     StoryBlockComponent,
-    StoryProjectsComponent
+    StoryProjectsComponent,
+    SkillDetailComponent,
+    KnowledgeMeterComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    RouterModule.forRoot(appRoutes)
-  ],
+  imports: [BrowserModule, AppRoutingModule, RouterModule.forRoot(appRoutes)],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
