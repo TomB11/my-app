@@ -1,0 +1,10 @@
+.knowledge-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  .knowledge {
+    flex: 1;
+    padding-bottom: 20px;
+  }
+}
