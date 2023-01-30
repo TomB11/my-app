@@ -1,8 +1,12 @@
 <div class="knowledge-meter">
+  <div class="document" *ngIf="true">
+    <img src="./assets/img/document.svg" alt="" />
+  </div>
+  <div class="point" *ngIf="false"></div>
   <div class="title">
     <h5>Name of knowledge</h5>
   </div>
-  <div class="meter">
+  <div class="meter" *ngIf="false">
     <div class="percentage">80%</div>
     <svg viewBox="0 0 36 36" class="circular-chart">
       <path

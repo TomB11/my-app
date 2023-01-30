@@ -28,18 +28,72 @@ export const translate: any = {
         {
           title: 'IT',
           id: '1',
+          type: 'round',
+          list: [
+            {
+              name: 'Angular',
+              percentage: 80,
+            },
+            {
+              name: 'React',
+              percentage: 50,
+            },
+            {
+              name: 'Vue.js',
+              percentage: 70,
+            },
+            {
+              name: 'Bootstrap/CSS',
+              percentage: 80,
+            },
+          ],
         },
         {
           title: 'Personal',
           id: '2',
+          type: 'poimt',
+          list: [
+            {
+              name: 'English',
+              level: 'advanced',
+            },
+            {
+              name: 'German',
+              level: 'advanced',
+            },
+            {
+              name: 'Slovak',
+              level: 'advanced',
+            },
+            {
+              name: 'Czech',
+              level: 'advanced',
+            },
+          ],
         },
         {
           title: 'Hobbys',
           id: '3',
+          type: 'poimt',
+          list: [
+            {
+              name: 'English',
+            },
+            {
+              name: 'German',
+            },
+            {
+              name: 'Slovak',
+            },
+            {
+              name: 'Czech',
+            },
+          ],
         },
         {
           title: 'Certifications',
           id: '4',
+          type: 'document',
         },
       ],
       detailTitle: 'Type of skill',
