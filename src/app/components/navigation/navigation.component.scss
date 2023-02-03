@@ -1,36 +1,38 @@
 .navigation {
-    background-color: white;
-    position: fixed;
+  background-color: white;
+  position: fixed;
+  width: 100%;
+
+  .navigation-div {
     width: 100%;
+    display: flex;
+    border-bottom: 5px solid #6495ed;
 
-    .navigation-div {
-        width: 100%;
-        display: flex;
-
-        .logo img {
-            width: 100px;
-        }
-    
-        .links {
-            flex-direction: row;
-            flex: 3;
-            justify-content: space-around;
-
-            li {
-                margin: 0 auto;
-                width: 150px;
-                text-align: center;
-
-                a {
-                    color: blue;
-                    transition: 0.3s;
-                }
-            }
-        }
-    
-        .social, .logo {
-            flex-direction: row;
-            flex: 1;
-        }
+    .logo img {
+      width: 100px;
     }
+
+    .links {
+      flex-direction: row;
+      flex: 3;
+      justify-content: space-around;
+
+      li {
+        margin: 0 auto;
+        width: 150px;
+        text-align: center;
+
+        a {
+          color: blue;
+          transition: 0.3s;
+        }
+      }
+    }
+
+    .social,
+    .logo {
+      flex-direction: row;
+      flex: 1;
+    }
+  }
 }

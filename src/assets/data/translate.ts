@@ -36,7 +36,7 @@ export const translate: any = {
             },
             {
               name: 'React',
-              percentage: 50,
+              percentage: 60,
             },
             {
               name: 'Vue.js',
@@ -44,7 +44,7 @@ export const translate: any = {
             },
             {
               name: 'Bootstrap/CSS',
-              percentage: 80,
+              percentage: 90,
             },
           ],
         },
@@ -77,16 +77,13 @@ export const translate: any = {
           type: 'poimt',
           list: [
             {
-              name: 'English',
+              name: 'Football',
             },
             {
-              name: 'German',
+              name: 'Garden working',
             },
             {
-              name: 'Slovak',
-            },
-            {
-              name: 'Czech',
+              name: 'GYM',
             },
           ],
         },
@@ -94,6 +91,14 @@ export const translate: any = {
           title: 'Certifications',
           id: '4',
           type: 'document',
+          list: [
+            {
+              name: 'Germnay language Level A1',
+            },
+            {
+              name: 'C# level basic',
+            },
+          ],
         },
       ],
       detailTitle: 'Type of skill',

@@ -1,9 +1,14 @@
 <div class="skill-detail">
-  <div>lqkjwbdenf wesdiofbn wjebndoovojoi nbowsd viwbnfdijhvbn owe fbviwbefv bwefihvjbnowidujfnbviuwoe bnfdviuow bnerfvuiwfbn voi w</div>
+  <div class="detail-description">
+    lqkjwbdenf wesdiofbn wjebndoovojoi nbowsd viwbnfdijhvbn owe fbviwbefv
+    bwefihvjbnowidujfnbviuwoe bnfdviuow bnerfvuiwfbn voiw
+  </div>
   <div class="knowledge-list">
-    <app-knowledge-meter class="knowledge"></app-knowledge-meter>
-    <app-knowledge-meter class="knowledge"></app-knowledge-meter>
-    <app-knowledge-meter class="knowledge"></app-knowledge-meter>
-    <app-knowledge-meter class="knowledge"></app-knowledge-meter>
+    <app-knowledge-meter
+      class="knowledge"
+      *ngFor="let knowledge of listOfKnowledes"
+      [knowledgeData]="knowledge"
+      [selectedType]="typeOfSkill"
+    ></app-knowledge-meter>
   </div>
 </div>

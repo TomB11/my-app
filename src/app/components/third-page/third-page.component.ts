@@ -12,6 +12,8 @@ export class ThirdPageComponent implements OnInit {
   isActive = false;
   activeIndex: Array<{ id: string; active: boolean }> = [];
   detailTitle = this.data.thirdPageContent.detailTitle;
+  selectedType = '';
+  selectedlistOfKnowledges: Array<{}> = [];
 
   constructor() {}
 
@@ -21,14 +23,16 @@ export class ThirdPageComponent implements OnInit {
     }
   }
 
-  categoryClicked(title: string, idButton: string) {
-    this.detailTitle = title;
+  categoryClicked(category: any) {
+    this.detailTitle = category.title;
 
-    this.activeIndex.find((category) => {
-      if (category.id === idButton) {
-        category.active = !category.active;
+    this.activeIndex.find((index) => {
+      if (index.id === category.id) {
+        index.active = !index.active;
+        this.selectedType = category.type;
+        this.selectedlistOfKnowledges = category.list;
       } else {
-        category.active = false;
+        index.active = false;
       }
     });
   }

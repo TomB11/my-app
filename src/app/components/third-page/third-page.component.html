@@ -12,7 +12,7 @@
           this.activeIndex[i].active ? 'btn btn-light active' : 'btn btn-light'
         "
         id="{{ category.id }}"
-        (click)="categoryClicked(category.title, category.id)"
+        (click)="categoryClicked(category)"
       >
         {{ category.title | uppercase }}
       </button>
@@ -20,6 +20,9 @@
   </div>
   <div class="detail-skills center">
     <h1>{{ this.detailTitle | uppercase }}</h1>
-    <app-skill-detail></app-skill-detail>
+    <app-skill-detail
+      [typeOfSkill]="this.selectedType"
+      [listOfKnowledes]="this.selectedlistOfKnowledges"
+    ></app-skill-detail>
   </div>
 </div>

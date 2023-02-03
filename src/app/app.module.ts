@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
+import { NgCircleProgressModule } from 'ng-circle-progress';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -23,6 +24,15 @@ const appRoutes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
 ];
 
+const progressBar = {
+  radius: 100,
+  outerStrokeWidth: 16,
+  innerStrokeWidth: 8,
+  outerStrokeColor: '#78C000',
+  innerStrokeColor: '#C7E596',
+  animationDuration: 300,
+};
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,7 +48,12 @@ const appRoutes: Routes = [
     SkillDetailComponent,
     KnowledgeMeterComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, RouterModule.forRoot(appRoutes)],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    RouterModule.forRoot(appRoutes),
+    NgCircleProgressModule.forRoot(progressBar),
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

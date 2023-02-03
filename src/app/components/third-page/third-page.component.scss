@@ -4,6 +4,7 @@
   width: 100%;
   background-color: white;
   padding: 110px 0 10px 0;
+  min-height: 600px;
 
   .menu-bar {
     flex: 1;
@@ -29,6 +30,7 @@
         transition: 0.3s;
         border-radius: 0;
         border: 0;
+        padding: 10px 0;
 
         &:hover {
           background: linear-gradient(
