@@ -16,6 +16,7 @@ import { StoryBlockComponent } from './components/utils/story-block/story-block.
 import { StoryProjectsComponent } from './components/utils/story-projects/story-projects.component';
 import { SkillDetailComponent } from './components/utils/skill-detail/skill-detail.component';
 import { KnowledgeMeterComponent } from './components/utils/knowledge-meter/knowledge-meter.component';
+import { FourthPageComponent } from './components/forth-page/fourth-page/fourth-page.component';
 
 const appRoutes: Routes = [
   { path: 'home', component: FirstPgeComponent },
@@ -47,6 +48,7 @@ const progressBar = {
     StoryProjectsComponent,
     SkillDetailComponent,
     KnowledgeMeterComponent,
+    FourthPageComponent,
   ],
   imports: [
     BrowserModule,
